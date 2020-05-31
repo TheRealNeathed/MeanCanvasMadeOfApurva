@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Drawing Board</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <!-- <script src="js/p5.play.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA6EtwmBAODWT7NkF2K7h1hK-njMy4pXnE",
+    authDomain: "worldcanvas-d07f4.firebaseapp.com",
+    databaseURL: "https://worldcanvas-d07f4.firebaseio.com",
+    projectId: "worldcanvas-d07f4",
+    storageBucket: "worldcanvas-d07f4.appspot.com",
+    messagingSenderId: "305695211017",
+    appId: "1:305695211017:web:aee0bd07da5770bd6942d8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="canvascontainer">
+        <script src="sketch.js"></script>
+    </div>
+    <p>
+        <button id="clearbutton">Clear Drawing</button>
+    </p>
+</body>
+
+</html>
